@@ -1,0 +1,17 @@
+/.bundle/
+/.yardoc
+/Gemfile.lock
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+.DS_Store
+.idea/.generators
+.idea/.rakeTasks
+.idea/misc.xml
+.idea/modules.xml
+.idea/network_speed.iml
+.idea/workspace.xml
+/log/*
