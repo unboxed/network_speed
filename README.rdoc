@@ -1,13 +1,14 @@
 == Network Speed
 
-This is a tool that can be used to measure the internet traffic on your router.
-
-If you have multiple routers in the office, this can plot them on a chart and show you which one is the fastest.
+This is a tool that can be used to measure the internet traffic on your router. If you have multiple routers in the office, this can plot them on a chart and show you which one is the fastest.
 
 It can also be configured to measure the internet speed of each individual computer in the office.
 
-In order to get data for this you have to install the Network Speed Daemon gem.
+In order to get data for this you have to install the Network Speed Daemon gem: 
 
-The gem will run a script every 3 minuts which will send data back to this API.
+    https://github.com/unboxed/network_speed_daemon
 
-Once enough data has been added you can view the result by starting the server: `rails s`
+The gem will run a script every 3 minutes which will send data back to this API.
+
+Once enough data has been added you can view the result by starting the server: 
+    rails s
