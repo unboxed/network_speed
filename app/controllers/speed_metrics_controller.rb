@@ -11,7 +11,7 @@ class SpeedMetricsController < ApplicationController
   end
 
   def data(network_name)
-    Metric.where(network_name: network_name).last_hour.group_by {|m| m.created_at.strftime("%H:%M") }.sort.inject({}) {|a, (k, v)| a[k] = v.map(&:download_speed).reduce(:+).to_f / v.size; a }
+    Metric.where(network_name: network_name).last_24_hours.group_by {|m| m.created_at.strftime("%H:%M") }.sort.inject({}) {|a, (k, v)| a[k] = v.map(&:download_speed).reduce(:+).to_f / v.size; a }
   end
 
   def create
