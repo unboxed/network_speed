@@ -12,3 +12,5 @@ The gem will run a script every 3 minutes which will send data back to this API.
 
 Once enough data has been added you can view the result by starting the server: 
     rails s
+
+If you want to stop using it, remember to uninstall the network_speed_daemon gem so that it does not continue firing a speed test every 3 minutes.
