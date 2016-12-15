@@ -1,6 +1,6 @@
 == Network Speed
 
-This is a tool developed during one of Unboxed's hackathon session. It can be used to measure the internet speed on your router. If you have multiple routers in the office, this can plot them on a chart and show you which one is the fastest.
+This is a tool developed during one of Unboxed's hackathon sessions. It can be used to measure the internet speed on your router. If you have multiple routers in the office, this can plot them on a chart and show you which one is the fastest.
 
 It can also be configured to measure the internet speed of each individual computer in the office.
 
