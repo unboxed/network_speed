@@ -15,3 +15,19 @@
 //= require turbolinks
 //= require chartkick
 //= require_tree .
+
+$(document).ready(function(){
+  speed = {}
+
+  speed.update_chart = function(){
+    chart = Chartkick.charts["chart-1"]
+
+    $.ajax({
+      url: "/speed_metrics.json"
+    }).done(function(data) {
+      chart.updateData(data)
+    });
+  }
+
+  setInterval(speed.update_chart, 60000);
+});

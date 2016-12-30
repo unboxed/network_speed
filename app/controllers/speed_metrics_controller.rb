@@ -8,6 +8,11 @@ class SpeedMetricsController < ApplicationController
     end
 
     response.headers["X-FRAME-OPTIONS"] = "goforit"
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @metrics }
+    end
   end
 
   def data(network_name)
