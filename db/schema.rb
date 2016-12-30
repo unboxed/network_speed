@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161205140539) do
+ActiveRecord::Schema.define(version: 20161230152311) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "metrics", force: :cascade do |t|
     t.string   "network_name"
-    t.integer  "download_speed"
+    t.float    "download_speed"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
     t.string   "host_name"

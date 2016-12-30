@@ -7,6 +7,18 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-50.times.each {
-  Metric.create(host_name: 'host_name', network_name: 'unboxed', download_speed: Random.rand(50..100))
-}
+50.times.with_index do |index|
+  Metric.create(
+    host_name: 'host_name',
+    network_name: 'unboxed',
+    download_speed: rand(50.0..100.0).round(2),
+    created_at: (index + 1).minutes.ago
+  )
+
+  Metric.create(
+    host_name: 'another_host_name',
+    network_name: 'unboxed_5ghz',
+    download_speed: rand(50.0..100.0).round(2),
+    created_at: (index + 1).minutes.ago
+  )
+end
