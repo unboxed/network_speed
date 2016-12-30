@@ -3,13 +3,9 @@ development:
   encoding: unicode
   database: network_speed_development
   pool: 5
-  username: elena
-  password: elena
 
 test:
   adapter: postgresql
   encoding: unicode
   database: network_speed_test
   pool: 5
-  username: elena
-  password: elena
